@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+<img src="${1:path/to/image.gif}" alt="$2" width="${3}" border="0" style="${4}border:0 none; display:block;" />
+]]></content>
+	<tabTrigger>eimg</tabTrigger>
+	<scope>text.html, source.php, source.javascript</scope>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+<a href="${1:https://sample.com/}" name="$2" target="_blank" style="color:${3:#0000ee}; text-decoration:${4:underline};">${5:This is link}</a>
+]]></content>
+	<tabTrigger>ea</tabTrigger>
+	<scope>text.html, source.php, source.javascript</scope>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+color:${1:#000000}; font-size:${2:12px}; line-height:${3:14px}; font-family:${4:Arial, 'Helvetica Neue', Helvetica, sans-serif}; text-align:${5:left};
+]]></content>
+	<tabTrigger>etype</tabTrigger>
+	<scope>text.html, text.css, source.php, source.javascript</scope>
+</snippet>

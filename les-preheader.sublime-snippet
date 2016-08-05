@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+<!-- preheader table cell -->
+<td style="max-height:0px; max-width:0px; display:none !important; color:#fffffe; font-size:1px; line-height:1px; visibility:hidden; opacity:0; overflow:hidden; mso-hide:all; padding:0;">
+	${1:Content goes here}
+</td>
+]]></content>
+	<tabTrigger>epreheader</tabTrigger>
+	<scope>text.html, source.php, source.javascript</scope>
+</snippet>

@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<td width="${1:600}" align="${2:left}" valign="${3:top}" style="${4}padding:${5:0};">
+	${6:Content goes here}
+</td>
+]]></content>
+	<tabTrigger>etd</tabTrigger>
+	<scope>text.html, source.php, source.javascript</scope>
+</snippet>

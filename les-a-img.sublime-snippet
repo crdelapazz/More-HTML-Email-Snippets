@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+<a href="${1:https://sample.com/}" name="$2" target="_blank" style="color:${3:#0000ee}; text-decoration:${4:underline};">
+	<img src="${5:path/to/image.gif}" alt="$6" width="${7}" border="0" style="${8}border:0 none; display:block;" />
+</a>
+]]></content>
+	<tabTrigger>eaimg</tabTrigger>
+	<scope>text.html, source.php, source.javascript</scope>
+</snippet>

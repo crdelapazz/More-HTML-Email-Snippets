@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<table width="${1:600}" align="${2:left}" cellpadding="0" cellspacing="0" style="${3}border-spacing:0;">
+	<tr>
+		<td width="${4:600}" align="${5:left}" valign="${6:top}" style="${7}padding:${8:0};">
+			${9:Content goes here}
+		</td>
+	</tr>
+</table>
+]]></content>
+	<tabTrigger>etable</tabTrigger>
+	<scope>text.html, source.php, source.javascript</scope>
+</snippet>
