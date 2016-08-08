@@ -1,4 +1,4 @@
-# More Email Snippets
+# More HTML Email Snippets
 
 Snippets for faster HTML Email coding. The main aim of the coding convention followed is to code **non-responsive emails with least quirks possible**. This is specialized for *Straight Arrow Corporation's LexisNexis UK team*. You might find it useful yourself.
 
