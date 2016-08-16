@@ -1,0 +1,14 @@
+<snippet>
+	<content><![CDATA[
+<!--[if mso]>
+	<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${1:https://sample.com/}" name="$2" strokeweight="${5:1px}" strokecolor="${6:#000000}" style="width:${8:100px}; height:${9:20px}; v-text-anchor:middle;" fill="t">
+		<v:fill type="tile" src="${3:https://i.imgur.com/0xPEf.gif}" color="${4:#556270}" />
+		<w:anchorlock/>
+		<center style="color:${10:#000000}; font-size:${11:12px}; font-family:${12:Arial, 'Helvetica Neue', Helvetica, sans-serif};">${13:This is button}</center>
+	</v:rect>
+<![endif]-->
+<a href="${1:https://sample.com/}" name="$2" target="_blank" style="width:${8:100px}; line-height:${9:20px}; display:inline-block; background-image:url(${3:https://i.imgur.com/0xPEf.gif}); background-color:${4:#556270}; color:${10:#000000}; font-size:${11:12px}; font-family:${12:Arial, 'Helvetica Neue', Helvetica, sans-serif}; text-align:center; text-decoration:none; border:${7:1px solid #000000}; -webkit-text-size-adjust:none; mso-hide:all;">${13:This is button}</a>
+]]></content>
+	<tabTrigger>eimgbtn</tabTrigger>
+	<scope>text.html, source.php, source.javascript</scope>
+</snippet>

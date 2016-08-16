@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+<!--[if mso]>
+	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="${1:https://sample.com/}" name="$2" fillcolor="${3:#ffffff}" strokeweight="${4:1px}" strokecolor="${5:#000000}" arcsize="${6:10%}" style="width:${9:100px}; height:${10:20px}; v-text-anchor:middle;">
+		<w:anchorlock/>
+		<center style="color:${11:#000000}; font-size:${12:12px}; font-family:${13:Arial, 'Helvetica Neue', Helvetica, sans-serif};">${14:This is button}</center>
+	</v:roundrect>
+<![endif]-->
+<a href="${1:https://sample.com/}" name="$2" target="_blank" style="width:${9:100px}; line-height:${10:20px}; display:inline-block; background-color:${3:#ffffff}; color:${11:#000000}; font-size:${12:12px}; font-family:${13:Arial, 'Helvetica Neue', Helvetica, sans-serif}; text-align:center; text-decoration:none; border:${7:1px solid #000000} border-radius:${8:2px}; -webkit-text-size-adjust:none; mso-hide:all;">${14:This is button}</a>
+]]></content>
+	<tabTrigger>erbtn</tabTrigger>
+	<scope>text.html, source.php, source.javascript</scope>
+</snippet>

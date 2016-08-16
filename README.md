@@ -7,7 +7,7 @@ Snippets for faster HTML Email coding. The main aim of the coding convention fol
 To use a snippet, type the trigger codes (listed below) then hit `tab` or `ctrl + enter`.
 *Remember, you can press `tab` / `shift + tab` for speedy navigation from one part of the code to another.*
 
-- **ehtml**
+- **ehtml** HTML Email Template
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -60,7 +60,7 @@ Content goes here
 </body>
 </html>
 ```
-- **etable**
+- **etable** Table
 ```
 <table width="600" align="left" cellpadding="0" cellspacing="0" style="border-spacing:0;">
 	<tr>
@@ -70,35 +70,35 @@ Content goes here
 	</tr>
 </table>
 ```
-- **etd**
+- **etd** Table cell
 ```
 <td width="600" align="left" valign="top" style="padding:0;">
 	Content goes here
 </td>
 ```
-- **epreheader**
+- **epreheader** Preheader (hidden table cell)
 ```
 <!-- preheader table cell -->
 <td style="max-height:0px; max-width:0px; display:none !important; color:#fffffe; font-size:1px; line-height:1px; visibility:hidden; opacity:0; overflow:hidden; mso-hide:all; padding:0;">
 	Content goes here
 </td>
 ```
-- **ea**
+- **ea** Link
 ```
 <a href="https://sample.com/" name="" target="_blank" style="color:#0000ee; text-decoration:underline;">This is link</a>
 ```
 *Note: the placeholder `https://sample.com/` was used instead of `#` to prevent some email apps (e.g. Outlook.com) from displaying the "invalid" URLs which could easily break the mail's layout during testing.*
-- **eimg**
+- **eimg** Image
 ```
 <img src="path/to/image.gif" alt="" width="" border="0" style="border:0 none; display:block;" />
 ```
-- **eaimg**
+- **eaimg** Link + image
 ```
 <a href="https://sample.com/" name="" target="_blank" style="color:#0000ee; text-decoration:underline;">
 	<img src="path/to/image.gif" alt="" width="" border="0" style="border:0 none; display:block;" />
 </a>
 ```
-- **ebtn**
+- **ebtn** Button
 ```
 <!--[if mso]>
 	<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://sample.com/" name="" fillcolor="#ffffff" strokeweight="1px" strokecolor="#000000" style="width:100px; height:20px; v-text-anchor:middle;">
@@ -108,7 +108,7 @@ Content goes here
 <![endif]-->
 <a href="https://sample.com/" name="" target="_blank" style="width:100px; display:inline-block; background-color:#ffffff; color:#000000; font-size:12px; line-height:20px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:center; text-decoration:none; border:1px solid #000000; -webkit-text-size-adjust:none; mso-hide:all;">This is button</a>
 ```
-- **erbtn** (Round-corners button)
+- **erbtn** Round-corners button
 ```
 <!--[if mso]>
 	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://sample.com/" name="" fillcolor="#ffffff" strokeweight="1px" strokecolor="#000000" arcsize="10%" style="width:100px; height:20px; v-text-anchor:middle;">
@@ -118,7 +118,62 @@ Content goes here
 <![endif]-->
 <a href="https://sample.com/" name="" target="_blank" style="width:100px; display:inline-block; background-color:#ffffff; color:#000000; font-size:12px; line-height:20px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:center; text-decoration:none; border:1px solid #000000 border-radius:2px; -webkit-text-size-adjust:none; mso-hide:all;">This is button</a>
 ```
-- **etype** (Typographical styles)
+- **eimgbtn** Button with image background
+```
+<!--[if mso]>
+	<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://sample.com/" name="" strokeweight="1px" strokecolor="#000000" style="width:100px; height:20px; v-text-anchor:middle;" fill="t">
+		<v:fill type="tile" src="https://i.imgur.com/0xPEf.gif" color="#556270" />
+		<w:anchorlock/>
+		<center style="color:#000000; font-size:12px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;">This is button</center>
+	</v:rect>
+<![endif]-->
+<a href="https://sample.com/" name="" target="_blank" style="width:100px; line-height:20px; display:inline-block; background-image:url(https://i.imgur.com/0xPEf.gif); background-color:#556270; color:#000000; font-size:12px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:center; text-decoration:none; border:1px solid #000000; -webkit-text-size-adjust:none; mso-hide:all;">This is button</a>
+```
+- **erimgbtn** Round-corners button with image background
+```
+<!--[if mso]>
+	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://sample.com/" name="" strokeweight="1px" strokecolor="#000000" arcsize="10%" style="width:100px; height:20px; v-text-anchor:middle;" fill="t">
+		<v:fill type="tile" src="https://i.imgur.com/0xPEf.gif" color="#556270" />
+		<w:anchorlock/>
+		<center style="color:#000000; font-size:12px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif;">This is button</center>
+	</v:roundrect>
+<![endif]-->
+<a href="https://sample.com/" name="" target="_blank" style="width:100px; line-height:20px; display:inline-block; background-image:url(https://i.imgur.com/0xPEf.gif); background-color:#556270; color:#000000; font-size:12px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:center; text-decoration:none; border:1px solid #000000 border-radius:2px; -webkit-text-size-adjust:none; mso-hide:all;">This is button</a>
+```
+- **eimgbg** Image background (table cell)
+```
+<td background="https://i.imgur.com/YJOX1PC.png" bgcolor="#7bceeb" height="800" width="600" align="left" valign="top" style="padding:0;">
+	<!--
+	NOTE:
+	for full-width table cell:
+		remove width attribute from <td> and width style from <v:rect>
+		and retain the "mso-width-percent:1000;" style on <v:rect>
+	for fixed-width table cell:
+		define width attribute on <td> and width style on <v:rect>
+		and remove the "mso-width-percent:1000;" style on <v:rect>
+	for full-height table cell:
+		remove height attribute from <td> and height style from <v:rect>
+		and retain the "mso-fit-shape-to-text:true" on <v:textbox>
+	for fixed-height table cell:
+		define height attribute on <td> and height style on <v:rect>
+		and remove the "mso-fit-shape-to-text:true" on <v:textbox>
+	-->
+
+	<!--[if gte mso 9]>
+	<v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false" style="width:600; height:800; mso-width-percent:1000;">
+		<v:fill type="tile" src="https://i.imgur.com/YJOX1PC.png" color="#7bceeb" />
+		<v:textbox style="mso-fit-shape-to-text:true;" inset="0,0,0,0">
+	<![endif]-->
+	<div>
+		Content goes here
+	</div>
+	<!--[if gte mso 9]>
+		</v:textbox>
+	</v:rect>
+	<![endif]-->
+</td>
+```
+- **etype** Typographical styles
 ```
 color:#000000; font-size:12px; line-height:14px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:left;
 ```
