@@ -1,13 +1,18 @@
 # More HTML Email Snippets
 
-Snippets for faster HTML Email coding. The main aim of the coding convention followed is to code **non-responsive emails with least quirks possible**. This is specialized for *Straight Arrow Corporation's LexisNexis UK team*. You might find it useful yourself.
+More snippets for faster HTML email coding. Including `preheader table cells`, `VML buttons`, `VML background` and more.
 
-### Snippets
+These snippets have incorporated coding techniques that focus on creating non-responsive emails with least quirks possible. *But*, it doesn't mean you can't use it for responsive emails, it may just lack few more codes to fit your coding style. (E.g. it has no `MSO conditionals` on each table/column unlike the [hybrid fluid method](http://webdesign.tutsplus.com/tutorials/creating-a-future-proof-responsive-email-without-media-queries--cms-23919).)
 
-To use a snippet, type the trigger codes (listed below) then hit `tab` or `ctrl + enter`.
-*Remember, you can press `tab` / `shift + tab` for speedy navigation from one part of the code to another.*
+This was specialized for *Straight Arrow Corporation's LexisNexis UK team*. You might find it useful yourself.
 
-- **ehtml** HTML Email Template
+## Snippets
+
+To use a snippet, type the trigger codes (listed below in bold) then hit `tab` or `ctrl + enter`.
+*Remember*, you can press `tab` / `shift + tab` for speedy navigation from one part of the code to another.
+
+
+**ehtml** — HTML Email Template
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional //EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -60,7 +65,8 @@ Content goes here
 </body>
 </html>
 ```
-- **etable** Table
+
+**etable** — table
 ```
 <table width="600" align="left" cellpadding="0" cellspacing="0" style="border-spacing:0;">
 	<tr>
@@ -70,35 +76,41 @@ Content goes here
 	</tr>
 </table>
 ```
-- **etd** Table cell
+
+**etd** — table cell
 ```
 <td width="600" align="left" valign="top" style="padding:0;">
 	Content goes here
 </td>
 ```
-- **epreheader** Preheader (hidden table cell)
+
+**epreheader** — preheader (hidden table cell)
 ```
 <!-- preheader table cell -->
 <td style="max-height:0px; max-width:0px; display:none !important; color:#fffffe; font-size:1px; line-height:1px; visibility:hidden; opacity:0; overflow:hidden; mso-hide:all; padding:0;">
 	Content goes here
 </td>
 ```
-- **ea** Link
+
+**ea** — link
 ```
 <a href="https://sample.com/" name="" target="_blank" style="color:#0000ee; text-decoration:underline;">This is link</a>
 ```
 *Note: the placeholder `https://sample.com/` was used instead of `#` to prevent some email apps (e.g. Outlook.com) from displaying the "invalid" URLs which could easily break the mail's layout during testing.*
-- **eimg** Image
+
+**eimg** — image
 ```
 <img src="path/to/image.gif" alt="" width="" border="0" style="border:0 none; display:block;" />
 ```
-- **eaimg** Link + image
+
+**eaimg** — link + image
 ```
 <a href="https://sample.com/" name="" target="_blank" style="color:#0000ee; text-decoration:underline;">
 	<img src="path/to/image.gif" alt="" width="" border="0" style="border:0 none; display:block;" />
 </a>
 ```
-- **ebtn** Button
+
+**ebtn** — button
 ```
 <!--[if mso]>
 	<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://sample.com/" name="" fillcolor="#ffffff" strokeweight="1px" strokecolor="#000000" style="width:100px; height:20px; v-text-anchor:middle;">
@@ -108,7 +120,8 @@ Content goes here
 <![endif]-->
 <a href="https://sample.com/" name="" target="_blank" style="width:100px; display:inline-block; background-color:#ffffff; color:#000000; font-size:12px; line-height:20px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:center; text-decoration:none; border:1px solid #000000; -webkit-text-size-adjust:none; mso-hide:all;">This is button</a>
 ```
-- **erbtn** Round-corners button
+
+**erbtn** — round-corners button
 ```
 <!--[if mso]>
 	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://sample.com/" name="" fillcolor="#ffffff" strokeweight="1px" strokecolor="#000000" arcsize="10%" style="width:100px; height:20px; v-text-anchor:middle;">
@@ -118,7 +131,8 @@ Content goes here
 <![endif]-->
 <a href="https://sample.com/" name="" target="_blank" style="width:100px; display:inline-block; background-color:#ffffff; color:#000000; font-size:12px; line-height:20px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:center; text-decoration:none; border:1px solid #000000 border-radius:2px; -webkit-text-size-adjust:none; mso-hide:all;">This is button</a>
 ```
-- **eimgbtn** Button with image background
+
+**eimgbtn** — button with image background
 ```
 <!--[if mso]>
 	<v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://sample.com/" name="" strokeweight="1px" strokecolor="#000000" style="width:100px; height:20px; v-text-anchor:middle;" fill="t">
@@ -129,7 +143,8 @@ Content goes here
 <![endif]-->
 <a href="https://sample.com/" name="" target="_blank" style="width:100px; line-height:20px; display:inline-block; background-image:url(https://i.imgur.com/0xPEf.gif); background-color:#556270; color:#000000; font-size:12px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:center; text-decoration:none; border:1px solid #000000; -webkit-text-size-adjust:none; mso-hide:all;">This is button</a>
 ```
-- **erimgbtn** Round-corners button with image background
+
+**erimgbtn** — round-corners button with image background
 ```
 <!--[if mso]>
 	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://sample.com/" name="" strokeweight="1px" strokecolor="#000000" arcsize="10%" style="width:100px; height:20px; v-text-anchor:middle;" fill="t">
@@ -140,7 +155,8 @@ Content goes here
 <![endif]-->
 <a href="https://sample.com/" name="" target="_blank" style="width:100px; line-height:20px; display:inline-block; background-image:url(https://i.imgur.com/0xPEf.gif); background-color:#556270; color:#000000; font-size:12px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:center; text-decoration:none; border:1px solid #000000 border-radius:2px; -webkit-text-size-adjust:none; mso-hide:all;">This is button</a>
 ```
-- **eimgbg** Image background (table cell)
+
+**eimgbg** — image background (table cell)
 ```
 <td background="https://i.imgur.com/YJOX1PC.png" bgcolor="#7bceeb" height="800" width="600" align="left" valign="top" style="padding:0;">
 	<!--
@@ -173,7 +189,8 @@ Content goes here
 	<![endif]-->
 </td>
 ```
-- **etype** Typographical styles
+
+**etype** — typographical styles
 ```
 color:#000000; font-size:12px; line-height:14px; font-family:Arial, 'Helvetica Neue', Helvetica, sans-serif; text-align:left;
 ```
