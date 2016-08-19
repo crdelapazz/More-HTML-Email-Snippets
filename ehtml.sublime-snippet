@@ -20,9 +20,8 @@
 	<![endif]-->
 
 	<style type="text/css">
+
 		/* Reset and client-specific fixes */
-
-
 		.ExternalClass { width:100%; }
 
 		.ExternalClass,
