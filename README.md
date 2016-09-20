@@ -2,9 +2,7 @@
 
 More snippets for faster HTML email coding. Including `preheader table cells`, `VML buttons`, `VML background` and more.
 
-These snippets have incorporated coding techniques that focus on creating non-responsive emails with least quirks possible. *But*, it doesn't mean you can't use it for responsive emails, it may just lack few more codes to fit your coding style. (E.g. it has no `MSO conditionals` on each table/column unlike the [hybrid fluid method](http://webdesign.tutsplus.com/tutorials/creating-a-future-proof-responsive-email-without-media-queries--cms-23919).)
-
-This was specialized for *Straight Arrow Corporation's LexisNexis UK team*. You might find it useful yourself.
+These snippets have incorporated coding techniques that focus on **creating non-responsive emails with least quirks possible**. But it doesn't necessarily mean you can't use it for responsive emails, it may just lack few more codes to fit your coding style. (E.g. You can just add more tables in `MSO conditionals` on each column to do the [hybrid fluid method](http://webdesign.tutsplus.com/tutorials/creating-a-future-proof-responsive-email-without-media-queries--cms-23919).)
 
 ## Snippets
 
